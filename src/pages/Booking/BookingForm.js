@@ -22,9 +22,9 @@ import {
 import * as Yup from 'yup';
 import useSubmit from "../../hooks/useSubmit";
 import ReservationModal from './ConfirmationModal';
-import './ReservationForm.scss';
+import './BookingForm.scss';
 
-const ReservationForm = () => {
+const BookingForm = () => {
   const { isLoading, response, submit, hasRequestError } = useSubmit();
   const { isOpen, onOpen, onClose } = useDisclosure()
 
@@ -224,4 +224,4 @@ const ReservationForm = () => {
   );
 };
 
-export default ReservationForm;
+export default BookingForm;

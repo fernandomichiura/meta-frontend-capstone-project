@@ -4,14 +4,14 @@ import {
   Heading,
   Text,
 } from "@chakra-ui/react";
-import './ReservationSuccess.scss';
+import './BookingFormSuccess.scss';
 
 import Success from '../../assets/reservation-success.jpg';
 import logo from '../../assets/logo.svg'
 
 const formatDate = (date) => new Date(date).toLocaleDateString();
 
-const ReservationSuccess = () => {
+const BookingFormSuccess = () => {
   const { state } = useLocation();
   const { name, date, time } = state;
 
@@ -33,4 +33,4 @@ const ReservationSuccess = () => {
   );
 }
 
-export default ReservationSuccess;
+export default BookingFormSuccess;

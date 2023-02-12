@@ -3,7 +3,7 @@ import Main from './Main';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 
-const Reservation = () => {
+const Booking = () => {
   return (
     <>
       <Header />
@@ -13,4 +13,4 @@ const Reservation = () => {
   );
 }
 
-export default Reservation;
+export default Booking;

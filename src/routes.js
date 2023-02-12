@@ -7,16 +7,16 @@ import {
 } from "react-router-dom";
 
 import Home from "./pages/Home/Home";
-import Reservation from "./pages/Reservation/Reservation";
-import ReservationSuccess from "./pages/ReservationSuccess/ReservationSuccess";
+import Booking from "./pages/Booking/Booking";
+import BookingFormSuccess from "./pages/BookingFormSuccess/BookingFormSuccess";
 
 const RouterRoutes = () => {
   return(
     <BrowserRouter>
       <Routes>
         <Route element={<Home />} path="/" />
-        <Route element={<Reservation />} path="/reservation" />
-        <Route element={<ReservationSuccess />} path="/reservation-success" />
+        <Route element={<Booking />} path="/reservation" />
+        <Route element={<BookingFormSuccess />} path="/reservation-success" />
         <Route path="" element={<Navigate to="/" />}
       />
       </Routes>

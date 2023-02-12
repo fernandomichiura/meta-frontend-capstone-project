@@ -69,8 +69,8 @@ const Main = () => {
         </header>
 
         <div className='cards-wrapper'>
-          {dishesInfo.map(dish => (
-            <article>
+          {dishesInfo.map((dish, index) => (
+            <article key={index}>
               <div className='card-image-container'>
                 <img src={dish.img} alt={dish.name} />
               </div>
@@ -100,8 +100,8 @@ const Main = () => {
           <h1>Testimonials</h1>
           
           <div className='testimonials-container'>
-            {testimonials.map(testimonial => (
-              <article>
+            {testimonials.map((testimonial, index) => (
+              <article key={index}>
                 <h3>Rating <small>({testimonial.rating})</small></h3>
                 <h4>{testimonial.name}</h4>
                 <img src={testimonial.photo} alt={testimonial.name} />

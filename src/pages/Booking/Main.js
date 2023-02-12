@@ -1,14 +1,14 @@
 import React from 'react';
 
 import Hero from './Hero';
-import ReservationForm from './ReservationForm';
+import BookingForm from './BookingForm';
 import './Main.scss';
 
 const Main = () => {
   return (
     <main id='c-main-reservation'>
       <Hero />
-      <ReservationForm />
+      <BookingForm />
     </main>
   );
 }
