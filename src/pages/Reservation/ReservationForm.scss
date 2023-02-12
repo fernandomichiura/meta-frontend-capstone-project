@@ -1,0 +1,93 @@
+#section-reservation-form {
+  width: 100%;
+
+  .reservation-form-wrapper {
+    font-family: 'Karla';
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    margin: 30px auto;
+
+    h1 {
+      font-weight: 800;
+      font-size: 20px;
+    }
+
+    .form-control {
+      position: relative;
+      width: 100%;
+
+      label {
+        color: #000000;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 30px;
+        margin-bottom: 0;
+      }
+
+      input {
+        box-sizing: border-box;
+        color: #4B4B4B;
+        background-color: #F3F3F3;
+        min-height: 38px;
+        width: 100%;
+        padding: 0 16px;
+        border: 1px solid #F3F3F3;
+        border-radius: 8px;
+
+        &[aria-invalid='true'] {
+          border-color: red;
+        }
+      }
+
+      .input-error {
+        position: absolute;
+        bottom: -20px;
+        left: 10px;
+        font-weight: 800;
+        font-size: 14px;
+        color: red;
+      }
+
+      .addon {
+        background-color: #F3F3F3;
+        border-radius: 8px;
+  
+        .form-left-addon {
+          background-color: #D1D1D1;
+          border-radius: 8px;
+          padding: 0 16px;
+        }
+      }
+    }
+
+    button#form-submit {
+      cursor: pointer;
+      background: #F4CE14;
+      height: 50px;
+      width: 100%;
+      max-width: 350px;
+      font-weight: 700;
+      font-size: 16px;
+      border-radius: 16px;
+      border: 0;
+      transition: background-color 0.5s ease;
+
+      &:disabled {
+        cursor: not-allowed;
+      }
+
+      &:hover:not(:disabled) {
+        background-color: #FFE45E;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #section-reservation-form {
+    .reservation-form-wrapper {
+      padding: 10px;
+    }
+  }
+}

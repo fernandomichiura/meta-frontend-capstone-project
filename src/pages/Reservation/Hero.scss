@@ -1,0 +1,67 @@
+article#c-hero-reservation {
+  background-color: #495E57;
+  width: 100%;
+    
+  .reservation-container {
+    display: flex;
+    font-family: 'Markazi Text';
+    max-width: 850px;
+    padding: 20px;
+    margin: 0 auto;
+
+    section.reservation-info {
+      display: flex;
+      flex-direction: column;
+  
+      h1, h3 {
+        margin: 0;
+      }
+  
+      h1 {
+        color: #F4CE14;
+        font-size: 64px;
+        font-weight: 500;
+        line-height: 40px;
+        white-space: nowrap;
+      }
+  
+      h3 {
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 40px;
+        color: #EDEFEE;
+      }
+  
+      p {
+        font-family: 'Karla';
+        font-size: 16px;
+        color: #EDEFEE;
+        margin: 10px 0 0;
+      }
+    }
+
+    section.reservation-image {
+      position: relative;
+      width: 100%;
+
+      img {
+        position: absolute;
+        top: -35px;
+        right: 0;
+        max-width: 300px;
+        border-radius: 16px;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  article#c-hero-reservation {
+    .reservation-container {
+      section.reservation-image {
+        display: none;
+      }
+    }
+  }
+}

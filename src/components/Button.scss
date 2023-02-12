@@ -1,0 +1,18 @@
+button#c-custom-cta {
+  cursor: pointer;
+  font-family: 'Karla';
+  background: #F4CE14;
+  color: #333333;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 14px 46px;
+  border: 0;
+  border-radius: 8px;
+  white-space: nowrap;
+
+  &:disabled {
+    cursor: not-allowed;
+    filter: opacity(0.65);
+  }
+}
