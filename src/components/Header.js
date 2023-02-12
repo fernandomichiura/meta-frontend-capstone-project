@@ -1,9 +1,11 @@
 import React from 'react';
+import Nav from './Nav';
+import './Header.scss';
 
 const Header = () => {
   return (
-    <header>
-      [Component] (Header)
+    <header id='c-header'>
+      <Nav />
     </header>
   );
 }

@@ -8,6 +8,7 @@ import {
 
 import Home from "./pages/Home/Home";
 import Reservation from "./pages/Reservation/Reservation";
+import ReservationSuccess from "./pages/ReservationSuccess/ReservationSuccess";
 
 const RouterRoutes = () => {
   return(
@@ -15,6 +16,7 @@ const RouterRoutes = () => {
       <Routes>
         <Route element={<Home />} path="/" />
         <Route element={<Reservation />} path="/reservation" />
+        <Route element={<ReservationSuccess />} path="/reservation-success" />
         <Route path="" element={<Navigate to="/" />}
       />
       </Routes>
