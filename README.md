@@ -7,7 +7,7 @@
 npm install
 ```
 
-#### Install Dependencies:
+#### Run the App:
 ```sh
 npm start
 ```
